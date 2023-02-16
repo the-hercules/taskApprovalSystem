@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Note Sheet</title>
+    <!---Custom CSS File--->
+    <link rel="stylesheet" href="assets/css/notesheet.css" />
+  </head>
+  <body>
+    <section class="container">
+      <header>Create Note Sheet</header>
+      <form action="#" class="form">
+        <div class="input-box">
+            <label>Date</label>
+            <input type="date" placeholder="Enter date" required />
+          </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label>School</label>
+            <div class="select-box">
+                <select required>
+                  <option hidden>Choose an option</option>
+                  <option>CSE</option>
+                  <option>IT</option>
+                  <option>CCE</option>
+                </select>
+              </div>
+          </div>
+          <div class="input-box">
+            <label>Department</label>
+            <div class="column">
+                <div class="select-box">
+                  <select>
+                    <option hidden>Choose an option</option>
+                    <option>CSE</option>
+                    <option>CSE AI/ML</option>
+                    <option>IT</option>
+                    <option>DSE</option>
+                    <option>CCE</option>
+                  </select>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="input-box">
+            <label>Subject</label>
+            <input type="text" placeholder="Enter subject of the note sheet" required />
+        </div>
+
+        <div class="input-box">
+            <label>Description</label>
+            <input type="text" placeholder="Enter description of the task" required />
+        </div>
+
+        <div class="input-box">
+            <label>Objective</label>
+            <input type="text" placeholder="Enter objective of the task" required />
+        </div>
+
+        <div class="input-box">
+            <label>Proposed Details, LOA, Expenses</label>
+            <input type="text" placeholder="Enter correct details" required />
+        </div>
+
+        <div class="column">
+            <div class="input-box">
+                <label>Proposal submitted by</label>
+                <input type="text" placeholder="Convener 1" required />
+            </div>
+            <div class="input-box">
+                <label>Proposal submitted by</label>
+                <input type="text" placeholder="Convener 2" required />
+            </div>
+        </div>
+
+        <div class="gender-box">
+            <h3>Select Authorities for Approval</h3>
+            <div class="gender-option">
+              <input type="checkbox" name="hod" id="hod" value="hod">
+              <label for="hod">HoD</label>
+              <input type="checkbox" name="director" id="director" value="director">
+              <label for="director">Director</label>
+              <input type="checkbox" name="others" id="others" value="others">
+              <label for="others">Others</label>
+            </div>
+          </div>
+        
+        <button>Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
